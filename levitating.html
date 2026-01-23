@@ -2,34 +2,42 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Levitating - Dua Lipa</title>
+    <title>Levitating</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
     <h1>Levitating</h1>
-    <p>Una de las canciones más exitosas</p>
+    <p>Uno de los mayores éxitos de Dua Lipa</p>
 </header>
 
 <main class="content">
-    <p>
-        <strong>Levitating</strong> fue lanzada en 2020 y se caracteriza por su
-        estilo disco-pop inspirado en los años 80.
-    </p>
 
     <p>
-        Es una de las canciones más reproducidas de Dua Lipa y ayudó
-        a consolidar su éxito internacional.
+        Levitating fue lanzada en 2020 y se caracteriza por su estilo
+        disco-pop inspirado en los años 80.
     </p>
 
-    <button onclick="volver()">Volver al inicio</button>
+    <div class="image-box">
+        <input type="text" id="imgInput-levitating" placeholder=https://i.scdn.co/image/ab67616d0000b2732172b607853fa89cefa2beb4>
+        <button onclick="mostrarImagen('levitating')">Agregar imagen</button>
+        <img id="img-levitating">
+    </div>
+
+    <div class="likes-box">
+        <button onclick="darLike('levitating')">❤️ Me gusta</button>
+        <p>Likes: <span id="likes-levitating">0</span></p>
+    </div>
+
+    <button onclick="volver()">Volver</button>
 </main>
 
 <footer>
-    <p>Proyecto informativo sin fines comerciales</p>
+    <p>Uso educativo</p>
 </footer>
 
 <script src="script.js"></script>
+<script>cargarLikes('levitating');</script>
 </body>
 </html>

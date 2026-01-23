@@ -10,11 +10,6 @@ function cargarLikes(id) {
     document.getElementById("likes-" + id).textContent = likes ? likes : 0;
 }
 
-function mostrarImagen(id) {
-    const input = document.getElementById("imgInput-" + id).value;
-    document.getElementById("img-" + id).src = input;
-}
-
 function volver() {
     window.location.href = "index.html";
 }

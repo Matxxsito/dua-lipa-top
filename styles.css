@@ -45,12 +45,12 @@ header {
     text-align: center;
 }
 
-.image-box input {
-    width: 80%;
-    padding: 8px;
+.song-img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
 
-.image-box button,
 .likes-box button,
 button {
     margin-top: 10px;
@@ -60,13 +60,6 @@ button {
     background: #ff4d6d;
     color: white;
     cursor: pointer;
-}
-
-.image-box img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    border-radius: 15px;
 }
 
 footer {

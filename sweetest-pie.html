@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Sweetest Pie - Dua Lipa</title>
+    <title>Sweetest Pie</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,24 +13,33 @@
 </header>
 
 <main class="content">
-    <p>
-        <strong>Sweetest Pie</strong> es una canción lanzada en 2022 en colaboración
-        con Megan Thee Stallion. Destaca por su ritmo moderno y una mezcla
-        de pop con hip-hop.
-    </p>
 
     <p>
-        La canción tuvo gran impacto en plataformas digitales y redes sociales,
-        convirtiéndose en tendencia por su estilo llamativo y producción actual.
+        Sweetest Pie es una canción lanzada en 2022 en colaboración
+        con Megan Thee Stallion. Combina pop y hip-hop moderno.
     </p>
 
-    <button onclick="volver()">Volver al inicio</button>
+    <!-- IMAGEN -->
+    <div class="image-box">
+        <input type="text" id="imgInput-sweetest" placeholder=https://images.genius.com/07f3366dfd1e5a832ccf24fc3e32b50f.1000x1000x1.png>
+        <button onclick="mostrarImagen('sweetest')">Agregar imagen</button>
+        <img id="img-sweetest">
+    </div>
+
+    <!-- LIKES -->
+    <div class="likes-box">
+        <button onclick="darLike('sweetest')">❤️ Me gusta</button>
+        <p>Likes: <span id="likes-sweetest">0</span></p>
+    </div>
+
+    <button onclick="volver()">Volver</button>
 </main>
 
 <footer>
-    <p>Uso educativo – Sin audio ni imágenes oficiales</p>
+    <p>Uso educativo</p>
 </footer>
 
 <script src="script.js"></script>
+<script>cargarLikes('sweetest');</script>
 </body>
 </html>

@@ -1,34 +1,36 @@
----
----
-{% include header.html %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sweetest Pie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Sweetest Pie</h1>
+</header>
+
 <main class="content">
 
-    <!-- IMAGEN (PEGA AQUÍ TU LINK) -->
     <a href="https://www.google.com" target="_blank">
-        <img src="https://images.genius.com/07f3366dfd1e5a832ccf24fc3e32b50f.1000x1000x1.png"
+        <img src="PEGA_AQUI_EL_LINK_DE_LA_IMAGEN"
              alt="Sweetest Pie"
              class="song-img">
     </a>
 
     <p>
         Sweetest Pie es una canción lanzada en 2022 en colaboración
-        con Megan Thee Stallion. Combina pop y hip-hop moderno.
+        con Megan Thee Stallion. Destaca por su ritmo moderno y estilo pop.
     </p>
 
-    <!-- LIKES -->
-    <div class="likes-box">
-        <button onclick="darLike('sweetest')">❤️ Me gusta</button>
-        <p>Likes: <span id="likes-sweetest">0</span></p>
-    </div>
+    <a href="index.html" class="back">⬅ Volver</a>
 
-    <button onclick="volver()">Volver</button>
 </main>
 
+<footer>
+    <p>Proyecto educativo</p>
+</footer>
 
-
-<script src="script.js"></script>
-<script>cargarLikes('sweetest');</script>
-{% include footer.html %}
-
-
-
+</body>
+</html>

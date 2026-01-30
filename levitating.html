@@ -1,34 +1,36 @@
----
----
-{% include header.html %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Levitating</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Levitating</h1>
+</header>
 
 <main class="content">
 
-    <!-- IMAGEN (PEGA AQUÍ TU LINK) -->
     <a href="https://www.google.com" target="_blank">
-        <img src="https://akamai.sscdn.co/letras/360x360/albuns/3/7/5/d/945591685387075.jpg"
+        <img src="PEGA_AQUI_EL_LINK_DE_LA_IMAGEN"
              alt="Levitating"
              class="song-img">
     </a>
 
     <p>
-        Levitating fue lanzada en 2020 y se caracteriza por su
-        estilo disco-pop inspirado en los años 80.
+        Levitating fue lanzada en 2020 y es una de las canciones
+        más exitosas de Dua Lipa, con un estilo disco-pop muy bailable.
     </p>
 
-    <div class="likes-box">
-        <button onclick="darLike('levitating')">❤️ Me gusta</button>
-        <p>Likes: <span id="likes-levitating">0</span></p>
-    </div>
+    <a href="index.html" class="back">⬅ Volver</a>
 
-    <button onclick="volver()">Volver</button>
 </main>
 
+<footer>
+    <p>Proyecto educativo</p>
+</footer>
 
-<script src="script.js"></script>
-<script>cargarLikes('levitating');</script>
-
-    {% include footer.html %}
-
-
-
+</body>
+</html>
